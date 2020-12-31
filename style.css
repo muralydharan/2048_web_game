@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #faf8ef;
+    color: #776e65;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.heading{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.scores-container{
+    float: right;
+    display: flex;
+    margin-right: 10px;
+}
+
+.score-container , .best-container{
+    position: relative;
+    display: block;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 47px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    margin: 5px;
+    text-align: center;
+}
+
+.score-container:after {
+    content: "Score";
+}
+
+.best-container:after {
+    content: "Best";
+}
+
+.score-container:after, .best-container:after {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #eee4da;
+}
+
+h1.title {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+.grid{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    background-color: #92817a;
+}
+
+.grid div{
+    width: 110px;
+    height: 110px;
+    background-color: #bbada0;
+    font-size: 50px;    
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 3px;
+}
